@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promaterialpy"
+version = "0.1.0"
+description = "A curated collection of mechanical, structural, and materials engineering datasets for mechanical-electrical design, computational modeling, and research. Includes standard commercial specifications, international design codes (ANSI, DIN, ISO, GOST), heat treatment metadata, pure element stiffness profiles, and fiber-reinforced composite manufacturing parameters from physics-inspired simulation and industrial databases."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Jorge Nunez Lopez", email = "jorgearon1905@gmail.com" }
+]
+maintainers = [
+    { name = "Jorge Nunez Lopez", email = "jorgearon1905@gmail.com" }
+]
+requires-python = ">=3.8"
+keywords = [
+    "materials",
+    "engineering",
+    "mechanical",
+    "electrical",
+    "structural",
+    "materials science",
+    "datasets",
+    "youngs modulus",
+    "elastic parameters",
+    "poisson ratio",
+    "yield strength",
+    "tensile strength",
+    "hardness",
+    "steel",
+    "alloy",
+    "composite materials",
+    "manufacturing",
+    "simulation",
+    "standard standards",
+    "ansi",
+    "din",
+    "iso",
+    "data science",
+    "research"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Natural Language :: English"
+]
+dependencies = [
+    "pandas>=1.5"
+]

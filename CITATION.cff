@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Núñez López
+    given-names: Jorge
+    email: jorgearon1905@gmail.com
+title: "promaterialpy"
+version: 0.1.0
+date-released: 2026-03-09
+abstract: "A curated Python library collecting mechanical, structural, and materials engineering datasets. It includes standard commercial specifications, international design codes (ANSI, DIN, ISO, GOST), pure element stiffness profiles, and fiber-reinforced composite manufacturing parameters optimized for engineering design, computational modeling, and research."
+keywords:
+  - materials engineering
+  - mechanical engineering
+  - structural design
+  - datasets
+  - youngs modulus
+  - composite materials
+  - standard specifications
+  - python
+license: GPL-3.0-only
+repository-code: "https://github.com/Jornulo/promaterialpy"
+type: software

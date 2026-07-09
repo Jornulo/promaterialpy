@@ -1,0 +1,17 @@
+site_name: promaterial
+site_description: A curated collection of mechanical, structural, and materials engineering datasets for data analysis, statistical modeling, and machine learning research in Python.
+site_author: Jorge Rolando Aarón Núñez López
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: teal
+
+nav:
+  - Home: index.md
+  - Examples: examples.md
