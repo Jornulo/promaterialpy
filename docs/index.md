@@ -85,10 +85,10 @@ All dataset names in `promaterialpy` follow a consistent naming pattern:
 Every dataset is **exclusively focused on legal, criminal justice, and political topics for
 data analysis, statistical modeling, and machine learning**:
 
-- **commercial_normas**: Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.
+- **commercial_regulations**: Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.
 - **commercial_properties**: Includes fundamental elastic properties (such as Young's modulus, shear modulus, Poisson's ratio, and density) optimized for direct mechanical calculations.
 - **pure_metals**: A scientific reference dataset recording the Young's modulus (in GPa) for 50 pure metals from the periodic table, providing an elemental baseline of stiffness.
-- **compounds**: A physics-inspired regression dataset modeling the ultimate tensile strength (in MPa) of fiber-reinforced composites (glass, carbon, aramid, basalt) based on manufacturing parameters.
+- **composite_material_strength**: A physics-inspired regression dataset modeling the ultimate tensile strength (in MPa) of fiber-reinforced composites (glass, carbon, aramid, basalt) based on manufacturing parameters.
 
 > **Disclaimer:** The datasets included in `promaterialpy` are provided strictly for educational, research, and informational purposes. For safety-critical engineering, formal structural certifications, or certified manufacturing specifications, always consult a licensed and qualified Professional Engineer.
 
