@@ -772,7 +772,7 @@ print(f&quot;Shape: {df.shape}&quot;)
 <h4 id="4-describe-a-dataset">4. Describe a dataset</h4>
 <pre><code class="language-python">
 # Describe a dataset
-print(pmp.describe(&quot;commercial_properties&quot;))
+print(pmp.describe_dataset(&quot;commercial_properties&quot;))
 
 </code></pre>
 <h3 id="basic-concepts">Basic Concepts</h3>
@@ -783,13 +783,14 @@ print(pmp.describe(&quot;commercial_properties&quot;))
 <li>Descriptive names that reflect content</li>
 </ul>
 <h4 id="some-datasets-available-at-promaterialpy">Some Datasets available at <code>promaterialpy</code></h4>
-<p>Every dataset is <strong>exclusively focused on legal, criminal justice, and political topics for
-data analysis, statistical modeling, and machine learning</strong>:</p>
+<p>EEvery dataset in this library is <strong>exclusively focused on mechanical, materials science, and energy engineering applications</strong>:</p>
 <ul>
 <li><strong>commercial_regulations</strong>: Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.</li>
 <li><strong>commercial_properties</strong>: Includes fundamental elastic properties (such as Young's modulus, shear modulus, Poisson's ratio, and density) optimized for direct mechanical calculations.</li>
 <li><strong>pure_metals</strong>: A scientific reference dataset recording the Young's modulus (in GPa) for 50 pure metals from the periodic table, providing an elemental baseline of stiffness.</li>
 <li><strong>composite_material_strength</strong>: A physics-inspired regression dataset modeling the ultimate tensile strength (in MPa) of fiber-reinforced composites (glass, carbon, aramid, basalt) based on manufacturing parameters.</li>
+<li><strong>solar_generation</strong>: An environmental and operational time-series dataset tracking irradiance, panel temperatures, and active power generation (kW) from a photovoltaic solar plant.</li>
+<li><strong>building_energy</strong>: A thermodynamic simulation dataset monitoring heating and cooling load requirements (kWh/m^2) across 12 distinct building geometries.</li>
 </ul>
 <blockquote>
 <p><strong>Disclaimer:</strong> The datasets included in <code>promaterialpy</code> are provided strictly for educational, research, and informational purposes. For safety-critical engineering, formal structural certifications, or certified manufacturing specifications, always consult a licensed and qualified Professional Engineer.</p>

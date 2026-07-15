@@ -325,10 +325,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-3-cataloging-available-engineering-corpora" class="md-nav__link">
+  <a href="#example-3-correlating-photovoltaic-efficiency-and-thermal-de-rating" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example 3: Cataloging Available Engineering Corpora
+        Example 3: Correlating Photovoltaic Efficiency and Thermal De-rating
       
     </span>
   </a>
@@ -409,10 +409,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-3-cataloging-available-engineering-corpora" class="md-nav__link">
+  <a href="#example-3-correlating-photovoltaic-efficiency-and-thermal-de-rating" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example 3: Cataloging Available Engineering Corpora
+        Example 3: Correlating Photovoltaic Efficiency and Thermal De-rating
       
     </span>
   </a>
@@ -462,7 +462,7 @@ print(f&quot;\nColumns: {list(material_data.columns)}&quot;)
 
 # Get summary statistics (mean stiffness, minimum yield strength, etc.)
 print(&quot;\nSummary statistics:&quot;)
-print(material_data.describe())
+print(material_data.describe_dataset())
 
 # Check for missing values in specification fields
 print(&quot;\nMissing values:&quot;)
@@ -470,12 +470,12 @@ print(material_data.isnull().sum())
 
 </code></pre>
 <h3 id="example-2-analyzing-fiber-reinforced-composite-manufacturing-parameters">Example 2: Analyzing Fiber-Reinforced Composite Manufacturing Parameters</h3>
-<p>Load the physics-inspired regression dataset to evaluate how ultimate tensile strength ($MPa$) behaves across different composite matrices (glass, carbon, aramid, basalt).</p>
+<p>Load the physics-inspired regression dataset to evaluate how ultimate tensile strength (MPa) behaves across different composite matrices (glass, carbon, aramid, basalt).</p>
 <pre><code class="language-python">
 import promaterialpy as pmp
 
-# Load the compounds manufacturing parameters dataset
-composites_df = pmp.load_dataset(&quot;compounds&quot;)
+# Load the composite_material_strength manufacturing parameters dataset
+composites_df = pmp.load_dataset(&quot;composite_material_strength&quot;)
 
 # Quick preview of manufacturing factors and tensile outputs
 print(composites_df.head())
@@ -483,15 +483,26 @@ print(f&quot;\nDataset shape: {composites_df.shape}&quot;)
 print(f&quot;\nTracked variables: {list(composites_df.columns)}&quot;)
 
 </code></pre>
-<h3 id="example-3-cataloging-available-engineering-corpora">Example 3: Cataloging Available Engineering Corpora</h3>
-<p>Quickly query and print all materials datasets currently registered within the ecosystem.</p>
+<h3 id="example-3-correlating-photovoltaic-efficiency-and-thermal-de-rating">Example 3: Correlating Photovoltaic Efficiency and Thermal De-rating</h3>
+<p>Load the solar generation dataset to analyze how solar irradiance and thermal stressors (ambient vs. panel surface temperature) impact the net power generation output.</p>
 <pre><code class="language-python">
 import promaterialpy as pmp
 
-# Retrieve and display the sorted list of engineering identifiers
-datasets = pmp.list_datasets()
-print(&quot;Available materials datasets:&quot;)
-print(datasets)
+# Load the clean hourly solar power generation time-series
+solar_df = pmp.load_dataset(&quot;solar_generation&quot;)
+
+# Preview the environmental and power columns
+print(solar_df.head())
+
+# Filter data to analyze high-irradiance peaks (greater than 800 W/m²)
+peak_solar = solar_df[solar_df['solar_irradiance_wm2'] &gt; 800]
+
+# Calculate the thermal delta (Panel Temperature minus Ambient Temperature)
+peak_solar['thermal_delta'] = peak_solar['panel_temperature_c'] - peak_solar['ambient_temperature_c']
+
+# Display relevant vectors for cooling and efficiency analysis
+print(&quot;\nPeak solar operational states:&quot;)
+print(peak_solar[['solar_irradiance_wm2', 'thermal_delta', 'power_generation_kw']].head())
 
 </code></pre>
 
