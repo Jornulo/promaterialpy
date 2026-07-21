@@ -138,3 +138,104 @@ Experimental dataset tracking steel chemical composition (%C, %Si, %Mn, %Ni, %Cr
 - **License:** CC0: Public Domain  
 - **Description:**  
   An independent validation dataset composed of synthetic single crystals. It serves as a benchmark set to test the generalization capabilities of machine learning models trained on naturally occurring mineral structures.
+
+## fdm_3d_printing
+
+- **Internal name:** `fdm_3d_printing`  
+- **Final filename:** `fdm_3d_printing.csv`  
+- **Original dataset name:** `FDM_Dataset.csv`  
+- **Source:** Kaggle  
+- **URL:** https://www.kaggle.com/datasets/ziya07/fdm-3d-printed-composite-material-prediction-data
+- **License:** CC0: Public Domain  
+- **Description:**  
+  This dataset captures the critical printing process and mechanical testing parameters that influence the structural integrity and quality of Fused Deposition Modeling (FDM) components. It bridges advanced additive manufacturing with structural engineering by tracking how slicing and extrusion dynamics affect final part strength.
+
+## 3d_printer_plastics
+
+- **Internal name:** `3d_printer_plastics`  
+- **Final filename:** `3d_printer_plastics.csv`  
+- **Original dataset name:** `3D_Printer_Plastics.csv`  
+- **Source:** Kaggle  
+- **URL:** https://www.kaggle.com/datasets/sourceduty/3d-printer-plastics-2024
+- **License:** CC0: Public Domain  
+- **Description:**  
+  A comprehensive materials characterization dataset covering 25 distinct industrial and engineering thermopolymers used in additive manufacturing. This dataset serves as an optimization tool for material selection, mapping core material limitations against engineering requirements.
+
+## nasa_battery_degradation
+
+- **Internal name:** `nasa_battery_degradation`  
+- **Final filename:** `nasa_battery_degradation.csv`  
+- **Original dataset name:** `battery_cycle_level_dataset_CLEAN_FINAL.csv`  
+- **Source:** Kaggle (Originally from NASA Ames PCoE)  
+- **URL:** https://www.kaggle.com/datasets/yashxss/nasa-battery-cycle-level-dataset
+- **License:** Apache 2.0  
+- **Description:**  
+  This is a processed, cycle-level version of the iconic NASA Lithium-Ion Battery Dataset. Collected under strict laboratory conditions by the NASA Ames Prognostics Center of Excellence, it captures real physical degradation behaviors, eliminating synthetic bias. It serves as a global benchmark for battery prognostics and structural capacity health monitoring.
+
+## industrial_iot_faults
+
+- **Internal name:** `industrial_iot_faults`  
+- **Final filename:** `industrial_iot_faults.csv`  
+- **Original dataset name:** `industrial_fault_detection_data_1000.csv`  
+- **Source:** Kaggle  
+- **URL:** https://www.kaggle.com/datasets/ziya07/industrial-iot-fault-detection-dataset
+- **License:** CC0: Public Domain  
+- **Description:**  
+  This dataset contains multi-sensor telemetry from industrial machinery operational environments. Monitoring critical thermodynamic and mechanical parameters like vibration, core temperature, and system pressure, it serves as an asset for training classification models in automated fault diagnosis, equipment safety, and condition-based monitoring.
+
+## conveyor_faults
+
+- **Internal name:** `conveyor_faults`  
+- **Final filename:** `conveyor_faults.csv`  
+- **Original dataset name:** `conveyor_fault_dataset.csv`  
+- **Source:** Kaggle  
+- **URL:** https://www.kaggle.com/datasets/ziya07/operational-conveyor-fault-dataset
+- **License:** CC0: Public Domain  
+- **Description:**  
+  This dataset monitors the operational health of an industrial conveyor belt system under various load configurations. It maps mechanical telemetry against electric motor current consumption, providing a balanced dataset for diagnosing real-world electromechanical failure modes, analyzing power demands, and building multi-class predictive maintenance models.
+
+## aerospace_structural_design
+
+- **Internal name:** `aerospace_structural_design`  
+- **Final filename:** `aerospace_structural_design.csv`  
+- **Original dataset name:** `aerospace_structural_design_dataset.csv`  
+- **Source:** Kaggle
+- **URL:** https://www.kaggle.com/datasets/ziya07/aerospace-structural-design-dataset
+- **License:** CC0: Public Domain  
+- **Description:**  
+  This dataset is tailored for structural optimization and dynamic behavior analysis in aerospace design. It features operational, environmental, and geometric variables across multiple advanced material choices, serving as an excellent asset for evaluating aircraft fuselage and wing durability, weight optimization, and vibration attenuation behaviors under simulated flight conditions.
+
+## turbine_efficiency
+
+- **Internal name:** `turbine_efficiency`  
+- **Final filename:** `turbine_efficiency.csv`  
+- **Original dataset name:** `Data.csv`  
+- **Source:** Kaggle
+- **URL:** https://www.kaggle.com/datasets/ishank2005/wind-turbines-data-csv
+- **License:** MIT  
+- **Description:**  
+  This dataset captures the operational parameters of a Combined Cycle Power Plant operating at full load. It isolates how thermodynamic environmental stressors impact the vacuum efficiency of steam and gas turbines, providing a high-quality matrix for multi-variable regression, energy balance analysis, and thermal efficiency modeling.
+
+## solar_generation
+
+- **Internal name:** `solar_generation`  
+- **Final filename:** `solar_generation.csv`
+- **Original dataset name:** `solar_plant_generation_dataset.csv`  
+- **Source:** Kaggle
+- **URL:** https://www.kaggle.com/datasets/juanschafle/solarplant-power-generation-monitoring-2023-2025
+- **License:** MIT  
+- **Description:**  
+  This dataset features continuous hourly monitoring data from a solar photovoltaic power generation facility. It captures the dynamic relationships between meteorological constraints, solar irradiance levels, photovoltaic panel thermal states, and final active power generation metrics, making it ideal for solar energy forecasting and grid stability studies.
+
+## building_energy
+
+- **Internal name:** `building_energy`  
+- **Final filename:** `building_energy.csv`  
+- **Original dataset name:** `eienergy_efficncy_data.csv`  
+- **Source:** Kaggle (UCI Machine Learning Repository)
+- **URL:** https://www.kaggle.com/datasets/ujjwalchowdhury/energy-efficiency-data-set
+- **License:** CC0: Public Domain  
+- **Description:**  
+  This dataset assesses the energy performance and thermal requirements of residential buildings based on structural characteristics. Using 12 different building shapes simulated under various configurations, it links geometric parameters directly to the thermal energy required to heat or cool the structures.
+
+

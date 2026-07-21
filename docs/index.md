@@ -28,7 +28,7 @@ pip install promaterialpy
 
 To get the latest development version with the newest features and bug fixes:
 ```bash
-pip install git+https://github.com/Jorbulo/promaterialpy
+pip install git+https://github.com/Jornulo/promaterialpy
 ```
 
 ### Quick Start Tutorial
@@ -66,7 +66,7 @@ print(f"Shape: {df.shape}")
 ```python
 
 # Describe a dataset
-print(pmp.describe("commercial_properties"))
+print(pmp.describe_dataset("commercial_properties"))
 
 ```
 
@@ -82,13 +82,14 @@ All dataset names in `promaterialpy` follow a consistent naming pattern:
 
 #### Some Datasets available at `promaterialpy`
 
-Every dataset is **exclusively focused on legal, criminal justice, and political topics for
-data analysis, statistical modeling, and machine learning**:
+EEvery dataset in this library is **exclusively focused on mechanical, materials science, and energy engineering applications**:
 
 - **commercial_regulations**: Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.
 - **commercial_properties**: Includes fundamental elastic properties (such as Young's modulus, shear modulus, Poisson's ratio, and density) optimized for direct mechanical calculations.
 - **pure_metals**: A scientific reference dataset recording the Young's modulus (in GPa) for 50 pure metals from the periodic table, providing an elemental baseline of stiffness.
 - **composite_material_strength**: A physics-inspired regression dataset modeling the ultimate tensile strength (in MPa) of fiber-reinforced composites (glass, carbon, aramid, basalt) based on manufacturing parameters.
+- **solar_generation**: An environmental and operational time-series dataset tracking irradiance, panel temperatures, and active power generation (kW) from a photovoltaic solar plant.
+- **building_energy**: A thermodynamic simulation dataset monitoring heating and cooling load requirements (kWh/m^2) across 12 distinct building geometries.
 
 > **Disclaimer:** The datasets included in `promaterialpy` are provided strictly for educational, research, and informational purposes. For safety-critical engineering, formal structural certifications, or certified manufacturing specifications, always consult a licensed and qualified Professional Engineer.
 

@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from promaterialpy.core import list_datasets, load_dataset, describe
+from promaterialpy.core import list_datasets, load_dataset, describe_dataset
 
 def test_list_datasets_returns_list():
     datasets = list_datasets()
@@ -39,16 +39,16 @@ def test_load_dataset_file_not_found(monkeypatch):
 
 def test_describe_returns_dict():
     name = list_datasets()[0]
-    result = describe(name)
+    result = describe_dataset(name)
     assert isinstance(result, dict)
 
 def test_describe_has_required_fields():
     name = list_datasets()[0]
-    result = describe(name)
+    result = describe_dataset(name)
     # Ajustado para que encaje con metadatos genéricos e industriales de ingeniería
-    required_fields = {"Filename", "Original name", "Source Repository", "License", "Description"}
+    required_fields = {"Filename", "Original name", "Source", "URL", "License", "Description"}
     assert required_fields.issubset(result.keys())
 
 def test_describe_invalid_name():
     with pytest.raises(ValueError):
-        describe("this_dataset_does_not_exist")
+        describe_dataset("this_dataset_does_not_exist")

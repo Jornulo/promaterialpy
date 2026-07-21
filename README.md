@@ -25,19 +25,20 @@ df = pmp.load_dataset('commercial_properties')
 print(df.head())
 
 # Describe dataset
-df_01 = pmp.describe('compounds')
+df_01 = pmp.describe_dataset('composite_material_strength')
 print(df_01)
 
 ```
 
 ## 📊 Some Available Datasets
 
-| Dataset | Description | 
-|---------|-------------|
-| `commercial_normas` | Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.| 
-| `commercial_properties` | Includes fundamental elastic properties (such as Young's modulus $E$, shear modulus $G$, Poisson's ratio, and density) optimized for direct mechanical calculations.| 
-| `pure_metals` | A scientific reference dataset recording the Young's modulus (in GPa) for 50 pure metals from the periodic table, providing an elemental baseline of stiffness.| 
-| `compounds` | A physics-inspired regression dataset modeling the ultimate tensile strength (in MPa) of fiber-reinforced composites (glass, carbon, aramid, basalt) based on manufacturing parameters.|
+| Dataset | Domain | Description | 
+|---------|--------|-------------|
+| `commercial_normas` | Materials & Standards | Contains detailed specifications, heat treatments, and international standards (ANSI, DIN, ISO, GOST) for standard design materials.| 
+| `commercial_properties` | Mechanical Design | Includes fundamental elastic properties (such as Young's modulus $E$, shear modulus $G$, Poisson's ratio, and density) optimized for direct mechanical calculations.| 
+| `pure_metals` | Materials Science | A scientific reference dataset recording the Young's modulus (in GPa) for 50 pure metals from the periodic table, providing an elemental baseline of stiffness.| 
+| `solar_generation` | Renewable Energy | Hourly time-series from a photovoltaic solar plant tracking solar irradiance (W/m^2), panel temperatures, and active power output (kW).|
+| `building_energy` | Thermal Systems | Thermodynamic simulation data tracking the heating and cooling load requirements (kWh/m^2) based on 12 distinct building geometries.|
 
 > Run `promaterialpy.list_datasets()` or `pmp.list_datasets()` (using `pmp` as alias) to see the full list of available datasets.
 
